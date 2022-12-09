@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 0.9375rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content .main-content{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);  
+    width:670px;
+    height: 360px;               
+}
+
+.main-content h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.main-content p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.6875rem;
+    line-height: 18px;
+}
+
+.main-content .sedan{
+    background-color: hsl(31, 77%, 52%);
+    padding: 25px 35px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.main-content .suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 25px 35px;
+}
+
+.main-content .luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 25px 35px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.main-content img{margin-top: 10px; width: 35%;}
+
+.main-content a{
+    display: inline-block;
+    background-color: hsl(0, 0%, 95%);
+    padding: 11px 20px;
+    border-radius: 35px;
+    font-size: 0.6875rem;
+    text-decoration: none;
+    margin-top:60px ;
+}
+
+.main-content .sedan a{color:hsl(31, 77%, 52%);}
+.main-content .suvs a{color:hsl(184, 100%, 22%);}
+.main-content .luxury a{color:hsl(179, 100%, 13%);}
+
+.main-content .sedan a:hover{
+    background-color:hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.main-content .suvs a:hover{
+    background:hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.main-content .luxury a:hover{
+    background-color:hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (max-width: 450px){
+    .content .main-content{
+        grid-template-columns:1fr;  
+        width:300px;
+      }
+    
+    .main-content .sedan{
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0;
+    }
+    
+    .main-content .luxury{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
